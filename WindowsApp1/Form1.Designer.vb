@@ -117,8 +117,8 @@ Partial Class vb_botz
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.No
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Button1.Location = New System.Drawing.Point(0, 239)
