@@ -29,6 +29,8 @@ Partial Class vb_botz
         Me.LinkGithub = New System.Windows.Forms.LinkLabel()
         Me.cright = New System.Windows.Forms.Label()
         Me.LinkAbout = New System.Windows.Forms.LinkLabel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,14 +61,15 @@ Partial Class vb_botz
         Me.Description.AutoSize = True
         Me.Description.Location = New System.Drawing.Point(112, 37)
         Me.Description.Name = "Description"
-        Me.Description.Size = New System.Drawing.Size(150, 56)
+        Me.Description.Size = New System.Drawing.Size(144, 56)
         Me.Description.TabIndex = 2
-        Me.Description.Text = "It is an Visual-basic Windows" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Forms application with" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "bots, that I wish will" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "he" &
-    "lp you."
+        Me.Description.Text = "It is a Visual-basic Windows" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Forms application with" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "bots, that I wish will" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "hel" &
+    "p you."
         '
         'LinkGithub
         '
         Me.LinkGithub.AutoSize = True
+        Me.LinkGithub.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkGithub.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkGithub.LinkColor = System.Drawing.Color.Navy
         Me.LinkGithub.Location = New System.Drawing.Point(17, 111)
@@ -89,6 +92,7 @@ Partial Class vb_botz
         'LinkAbout
         '
         Me.LinkAbout.AutoSize = True
+        Me.LinkAbout.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkAbout.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkAbout.LinkColor = System.Drawing.Color.Navy
         Me.LinkAbout.Location = New System.Drawing.Point(236, 378)
@@ -99,12 +103,39 @@ Partial Class vb_botz
         Me.LinkAbout.Text = "About"
         Me.LinkAbout.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         '
+        'Button3
+        '
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button3.Location = New System.Drawing.Point(0, 173)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(284, 60)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "John Doe"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.No
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button1.Location = New System.Drawing.Point(0, 239)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(284, 60)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Crypto"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'vb_botz
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(284, 401)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.LinkAbout)
         Me.Controls.Add(Me.cright)
         Me.Controls.Add(Me.LinkGithub)
@@ -114,7 +145,7 @@ Partial Class vb_botz
         Me.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "vb_botz"
-        Me.Text = "Form1"
+        Me.Text = "Hello World!"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -127,4 +158,6 @@ Partial Class vb_botz
     Friend WithEvents LinkGithub As LinkLabel
     Friend WithEvents cright As Label
     Friend WithEvents LinkAbout As LinkLabel
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button1 As Button
 End Class
