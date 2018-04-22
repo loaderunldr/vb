@@ -26,6 +26,7 @@ Partial Class About
         Me.lblPageName = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Description = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,11 +61,21 @@ Partial Class About
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Serikov Aldiyar. NIS CBD Almaty 2018"
         '
+        'Description
+        '
+        Me.Description.AutoSize = True
+        Me.Description.Location = New System.Drawing.Point(13, 47)
+        Me.Description.Name = "Description"
+        Me.Description.Size = New System.Drawing.Size(33, 14)
+        Me.Description.TabIndex = 3
+        Me.Description.Text = "Bot - "
+        '
         'About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 401)
+        Me.Controls.Add(Me.Description)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblPageName)
@@ -81,4 +92,5 @@ Partial Class About
     Friend WithEvents lblPageName As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Description As Label
 End Class
