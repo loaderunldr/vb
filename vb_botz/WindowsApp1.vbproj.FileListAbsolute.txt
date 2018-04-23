@@ -1,0 +1,14 @@
+C:\vb\WindowsApp1\bin\Release\WindowsApp1.exe.config
+C:\vb\WindowsApp1\bin\Release\WindowsApp1.exe
+C:\vb\WindowsApp1\bin\Release\WindowsApp1.pdb
+C:\vb\WindowsApp1\bin\Release\WindowsApp1.xml
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.Crypto.resources
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.vb_botz.resources
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.John.resources
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.Resources.resources
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.About.resources
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.vbproj.GenerateResource.cache
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.exe
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.xml
+C:\vb\WindowsApp1\obj\Release\WindowsApp1.pdb
