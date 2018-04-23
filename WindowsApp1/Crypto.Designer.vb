@@ -28,8 +28,6 @@ Partial Class Crypto
         Me.txtMsg = New System.Windows.Forms.TextBox()
         Me.btnCeaserSet = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnASCIISet = New System.Windows.Forms.Button()
-        Me.btnA1Z26Set = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnCeaserMin = New System.Windows.Forms.Button()
         Me.btnCeaserPlus = New System.Windows.Forms.Button()
@@ -80,7 +78,7 @@ Partial Class Crypto
         Me.btnCeaserSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCeaserSet.Location = New System.Drawing.Point(79, 77)
         Me.btnCeaserSet.Name = "btnCeaserSet"
-        Me.btnCeaserSet.Size = New System.Drawing.Size(57, 23)
+        Me.btnCeaserSet.Size = New System.Drawing.Size(100, 23)
         Me.btnCeaserSet.TabIndex = 9
         Me.btnCeaserSet.Text = "Ceasar"
         Me.btnCeaserSet.UseVisualStyleBackColor = True
@@ -94,30 +92,6 @@ Partial Class Crypto
         Me.Label1.Size = New System.Drawing.Size(139, 22)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Choose mode"
-        '
-        'btnASCIISet
-        '
-        Me.btnASCIISet.BackColor = System.Drawing.Color.Maroon
-        Me.btnASCIISet.Cursor = System.Windows.Forms.Cursors.No
-        Me.btnASCIISet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnASCIISet.Location = New System.Drawing.Point(142, 77)
-        Me.btnASCIISet.Name = "btnASCIISet"
-        Me.btnASCIISet.Size = New System.Drawing.Size(59, 23)
-        Me.btnASCIISet.TabIndex = 11
-        Me.btnASCIISet.Text = "ASCII"
-        Me.btnASCIISet.UseVisualStyleBackColor = False
-        '
-        'btnA1Z26Set
-        '
-        Me.btnA1Z26Set.BackColor = System.Drawing.Color.Maroon
-        Me.btnA1Z26Set.Cursor = System.Windows.Forms.Cursors.No
-        Me.btnA1Z26Set.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnA1Z26Set.Location = New System.Drawing.Point(207, 77)
-        Me.btnA1Z26Set.Name = "btnA1Z26Set"
-        Me.btnA1Z26Set.Size = New System.Drawing.Size(66, 23)
-        Me.btnA1Z26Set.TabIndex = 12
-        Me.btnA1Z26Set.Text = "A1-Z26"
-        Me.btnA1Z26Set.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -145,7 +119,7 @@ Partial Class Crypto
         '
         Me.btnCeaserPlus.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCeaserPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCeaserPlus.Location = New System.Drawing.Point(152, 107)
+        Me.btnCeaserPlus.Location = New System.Drawing.Point(154, 108)
         Me.btnCeaserPlus.Name = "btnCeaserPlus"
         Me.btnCeaserPlus.Size = New System.Drawing.Size(25, 25)
         Me.btnCeaserPlus.TabIndex = 15
@@ -155,7 +129,7 @@ Partial Class Crypto
         '
         'txtCeaser
         '
-        Me.txtCeaser.Location = New System.Drawing.Point(111, 111)
+        Me.txtCeaser.Location = New System.Drawing.Point(113, 111)
         Me.txtCeaser.MaxLength = 2
         Me.txtCeaser.Name = "txtCeaser"
         Me.txtCeaser.Size = New System.Drawing.Size(35, 20)
@@ -181,7 +155,7 @@ Partial Class Crypto
         Me.txtEnc.Multiline = True
         Me.txtEnc.Name = "txtEnc"
         Me.txtEnc.ReadOnly = True
-        Me.txtEnc.Size = New System.Drawing.Size(261, 147)
+        Me.txtEnc.Size = New System.Drawing.Size(261, 103)
         Me.txtEnc.TabIndex = 19
         '
         'Encrypt
@@ -205,9 +179,10 @@ Partial Class Crypto
         'setVal
         '
         Me.setVal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.setVal.Location = New System.Drawing.Point(183, 109)
+        Me.setVal.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.setVal.Location = New System.Drawing.Point(90, 259)
         Me.setVal.Name = "setVal"
-        Me.setVal.Size = New System.Drawing.Size(89, 23)
+        Me.setVal.Size = New System.Drawing.Size(104, 39)
         Me.setVal.TabIndex = 22
         Me.setVal.TabStop = False
         Me.setVal.Text = "Set as Value"
@@ -227,8 +202,6 @@ Partial Class Crypto
         Me.Controls.Add(Me.txtCeaser)
         Me.Controls.Add(Me.btnCeaserPlus)
         Me.Controls.Add(Me.btnCeaserMin)
-        Me.Controls.Add(Me.btnA1Z26Set)
-        Me.Controls.Add(Me.btnASCIISet)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCeaserSet)
         Me.Controls.Add(Me.txtMsg)
@@ -249,8 +222,6 @@ Partial Class Crypto
     Friend WithEvents txtMsg As TextBox
     Friend WithEvents btnCeaserSet As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnASCIISet As Button
-    Friend WithEvents btnA1Z26Set As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnCeaserMin As Button
     Friend WithEvents btnCeaserPlus As Button

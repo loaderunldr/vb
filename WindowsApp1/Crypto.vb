@@ -15,10 +15,6 @@
         If mode = "ceasar" Then
             Dim cesRes As String = Ceasar_cipher(msg, cesN, True)
             txtEnc.Text = cesRes
-        ElseIf mode = "ascii" Then
-            txtEnc.Text = Asc(msg)
-        ElseIf mode = "a1z26" Then
-
         Else
             MsgBox("Choose mode")
         End If
@@ -43,10 +39,6 @@
         If mode = "ceasar" Then
             Dim cesRes As String = Ceasar_cipher(msg, cesN, False)
             txtEnc.Text = cesRes
-        ElseIf mode = "ascii" Then
-
-        ElseIf mode = "a1z26" Then
-
         Else
             MsgBox("Choose mode")
         End If
@@ -91,20 +83,6 @@
         btnCeaserPlus.Visible = True
         txtCeaser.Visible = True
         lblMode.Text = "ceasar"
-    End Sub
-
-    Public Sub btnASCIISet_Click(sender As Object, e As EventArgs) Handles btnASCIISet.Click
-        lblMode.Text = "DISABLED"
-        btnCeaserMin.Visible = False
-        btnCeaserPlus.Visible = False
-        txtCeaser.Visible = False
-    End Sub
-
-    Private Sub btnA1Z26Set_Click(sender As Object, e As EventArgs) Handles btnA1Z26Set.Click
-        lblMode.Text = "DISABLED"
-        btnCeaserMin.Visible = False
-        btnCeaserPlus.Visible = False
-        txtCeaser.Visible = False
     End Sub
 
     Private Sub Crypto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
